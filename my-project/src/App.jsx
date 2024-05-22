@@ -1,7 +1,16 @@
-export default function App() {
+
+import React from 'react';
+import TaskForm from './api/TaskForm.jsx';
+import './App.css';
+
+const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
-}
+    <div className="App">
+      <header className="App-header">
+        <TaskForm />
+      </header>
+    </div>
+  );
+};
+
+export default App;
